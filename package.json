@@ -1,0 +1,9 @@
+{
+  "name": "lumen-run",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A tiny browser maze game. Carry the light, collect shards, outrun the shadows.",
+  "scripts": {
+    "test": "node --test"
+  }
+}
