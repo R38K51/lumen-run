@@ -1,5 +1,5 @@
 <h1 align="center">Lumen Run</h1>
-<p align="center">English: A tiny browser maze game. Carry the light, collect every shard, outrun the shadows.<br>日本語：あかりを抱いて暗い迷路を走るブラウザゲーム。欠片を集めて、影から逃げ切ろう。</p>
+<p align="center">English: A tiny browser maze game. Carry the light, collect every shard, outrun the shadows.<br>日本語：暗い迷路を、自分のあかりだけを頼りに進むブラウザゲーム。欠片を全部集めて出口を開き、追ってくる影から逃げ切ります。</p>
 <p align="center">
   <a href="https://r38k51.github.io/lumen-run/"><img src="https://img.shields.io/badge/play-online-7fe3ff" alt="Play online"></a>
   <img src="https://img.shields.io/badge/dependencies-none-brightgreen" alt="No dependencies">
@@ -66,23 +66,23 @@ Not decided yet.
 <a id="日本語"></a>
 ## 日本語
 
-こちらで遊べます：https://r38k51.github.io/lumen-run/
+ここで遊べます：https://r38k51.github.io/lumen-run/
 
 ### 特徴
 
-- 道が見えるのは自分のあかりの範囲だけ。階ごとにシードから迷路を作ります。
-- 影は3種類：追いかける影、先回りする影、さまよう影。
+- 見えるのは、自分のあかりが届く範囲だけです。迷路は階ごとに自動で作られます。
+- 影は3種類います。追いかけてくる影、行く先に回り込む影、うろうろしている影です。
 - ダッシュ（スペース）で一気に3マス進み、その間は捕まりません。
-- 階が進むと迷路が広くなり影も速くなりますが、途中から難しさは頭打ちになり、深くまで潜れます。
-- 階をクリアするとライフが1回復します。速さは3段階（ゆっくり、ふつう、はやい）。
-- 日本語と英語の表示、効果音、タッチ操作（スワイプとダッシュボタン）。
-- 静的な1ページで、インストール、通信、素材は不要です。
+- 階が進むと迷路は広くなり、影は速くなります。ただし15階あたりからは難しさが変わらないので、深い階まで進めます。
+- 階をクリアするとライフが1つ回復します。ゲームの速さは3段階（ゆっくり、ふつう、はやい）から選べます。
+- 日本語と英語の表示、効果音、スマホ用の操作（スワイプとダッシュボタン）があります。
+- 1枚のページだけで動きます。インストールも通信も不要で、画像などの素材も使っていません。
 
 ![タイトル画面](screenshots/title.png)
 
 ### 必要なもの
 
-- 新しめのブラウザ（Chrome、Edge、Firefox、Safari）。確認したのは Chromium だけで、ほかのブラウザは未確認です。
+- 最近のブラウザ（Chrome、Edge、Firefox、Safari）。動作を確かめたのは Chromium だけで、ほかのブラウザは未確認です。
 - テストを動かすには Node.js 20 以上（確認は Node 22）。
 
 ### 使い方
@@ -100,7 +100,7 @@ python -m http.server 8000
 | P または Esc | 一時停止 |
 | M / V / L | 音 / 速さ / 言語 |
 
-URL に `?seed=123` を付けると同じ迷路を再現できます。「今日の迷路」は日付がシードです。
+URL の末尾に `?seed=123` を付けると、毎回同じ迷路で遊べます（数字が迷路の元になります）。「今日の迷路」は、その日の日付が元になるので、同じ日は誰でも同じ迷路です。
 
 ### テスト
 
@@ -108,7 +108,7 @@ URL に `?seed=123` を付けると同じ迷路を再現できます。「今日
 node --test
 ```
 
-迷路がつながること、壁、ダッシュ、欠片と出口、捕まる・ゲームオーバー、シードの再現を確かめます。
+迷路が全部つながっていること、壁を抜けないこと、ダッシュ、欠片と出口、捕まったときとゲームオーバー、同じ数字で同じ迷路になることを確かめます。
 
 ### ライセンス
 
