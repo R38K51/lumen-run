@@ -80,7 +80,7 @@ The tests cover maze connectivity, walls, dash, shards and the gate, getting cau
 
 ### License
 
-No license has been chosen yet. If you would like to use this code, please open an Issue.
+[MIT](LICENSE). Copyright (c) 2026 R38K51.
 
 ---
 
@@ -145,4 +145,4 @@ node --test
 
 ### ライセンス
 
-ライセンスはまだ決めていません。使いたい場合は Issue でお知らせください。
+[MIT](LICENSE)。Copyright (c) 2026 R38K51。
